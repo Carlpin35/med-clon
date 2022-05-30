@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+med-clon/node_modules
+
+
 # testing
 /coverage
 

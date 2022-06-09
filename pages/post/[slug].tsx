@@ -72,16 +72,16 @@ export default function _Post({ post }: Props) {
            serializers={
            	{
            		 h1: (props: any) => (
-                   <h1 classname="text-2xl font-bold my-5" {...props} />
+                   <h1 className="text-2xl font-bold my-5" {...props} />
            		 	),
            		 h2: (props: any) => (
-                   <h2 classname="text-xl font-bold my-5" {...props} />
+                   <h2 className="text-xl font-bold my-5" {...props} />
            		 	),
            		 li: ({ children }: any) => (
                   <li className="ml-4 list-disc">{children}</li>
            		 	),
            		 link: ({ href, children }: any ) => (
-                   <a href={href} classname="text-blue-500 hover:underline">
+                   <a href={href} className="text-blue-500 hover:underline">
                      {children} 
                    </a>
            		 	),

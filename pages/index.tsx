@@ -4,7 +4,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-import Posts from '../components/Posts'
 import { sanityClient, urlFor, config } from '../sanity';
 import { Post } from '../typings';
 import createImageUrlBuilder from 'sanity/image-url'

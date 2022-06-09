@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import  sanityClient  from '@sanity/client';
 
 
-declare var Data: any
+
 
 export const config = {
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
@@ -18,7 +18,7 @@ const client = sanityClient(config)
 
 export default async function createComment(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse
 ) {
  
    const { _id, name, email, comment } = JSON.parse(req.body);

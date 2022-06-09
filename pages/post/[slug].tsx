@@ -3,7 +3,7 @@ import { sanityClient, urlFor } from '../../sanity';
 import { Post } from '../../typings';
 import { GetStaticProps } from 'next';
 import PortableText from 'react-portable-text';
-import { useForm, submitHandler } from 'react-hook-form'
+import { useForm, SubmitHandler } from 'react-hook-form'
 import { useState } from 'react'
  
 interface IFormInput {
@@ -27,7 +27,7 @@ export default function _Post({ post }: Props) {
    	formState: {errors} 
    } = useForm<IFormInput>();
 
-   const onSubmit: submitHandler<IFormInput> = async(data) => {
+   const onSubmit: SubmitHandler<IFormInput> = async(data) => {
         fetch('/api/createComment', {
        	   method: 'POST',
        	   body: JSON.stringify(data),

@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import { sanityClient, urlFor, config } from '../sanity';
 import { Post } from '../typings';
-import createImageUrlBuilder from 'sanity/image-url'
+
 
 interface Props{
   posts: [Post]
